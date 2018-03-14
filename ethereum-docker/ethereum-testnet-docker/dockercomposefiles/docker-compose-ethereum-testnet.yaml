@@ -1,13 +1,13 @@
 version: '2.1'
 networks:
   ethereumnet:
-    driver: bridge
+    driver: bridge # 这里是配置数据链路层网桥？还是网络层路由？
     enable_ipv6: true
     ipam:
       driver: default
       config:
       -
-        subnet: 172.16.238.0/24
+        subnet: 172.16.238.0/24  # 172.16.238.0 为网络， 掩码 255.255.255.0
       -
         subnet: 2001:3984:3989::/64  
 services:

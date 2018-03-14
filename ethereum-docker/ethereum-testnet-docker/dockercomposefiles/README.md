@@ -1,8 +1,8 @@
 environment settings specifications:
-      #datadir of ethereum, in which cluster peers data will be put in it
-      - CLUSTER_DATADIR=/ethcluster
-      #ethereum network id, pls make sure all cluster's network id be identical
-      - NETWORK_ID=779977
+      - datadir of ethereum, in which cluster peers data will be put in it
+            - CLUSTER_DATADIR=/ethcluster
+      - ethereum network id, pls make sure all cluster's network id be identical
+            - NETWORK_ID=779977
       #number of peer instances generated in the cluster, if RAM<3G pls set it smaller then 4 
       - CLUSTER_INSTANCE_NUM=4
       #if this cluster first peer instance be assigned as the boot node, there should be exactly one cluster set the property as Y in one network with the same network id
